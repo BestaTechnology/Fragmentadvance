@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    
+    
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/appbarlayout"
+        android:layout_gravity="center|top"
+        android:background="@color/colorPrimary">
+        
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="218dp"
+            android:id="@+id/img_view"
+            android:src="@drawable/supercar"/>
+
+    </android.support.design.widget.AppBarLayout>
+<android.support.design.widget.TabLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:tabGravity="fill"
+    app:tabMode="scrollable"
+    android:id="@+id/tablayout_id"
+    app:tabTextColor="@color/tantextcolor"
+    app:tabBackground="@color/tabbackgroundcolor"
+    app:tabIndicator="@color/tabindicatorcolor"/>
+    
+    
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewpage">
+    </android.support.v4.view.ViewPager>
+
+
+
+
+</LinearLayout>
